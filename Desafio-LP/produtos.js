@@ -202,23 +202,22 @@ console.log(catalogo.listar())
 
 // testando os métodos do carrinho
 console.log("==============Testando os métodos do carrinho==============")
-adicionar(carrinho, 1, 2);
+adicionar(carrinho, 5, 2);
 adicionar(carrinho, 7, 3);
 adicionar(carrinho, 3, 10)
 alterarQuantidade(carrinho, 7, 1);
-remover(carrinho, 1);
+// remover(carrinho, 1);
 
 // detalhes do pedido
 console.log("==============Detalhes do pedido==============")
 console.log("Carrinho:", carrinho);
 console.log("Total: R$", calcularTotal(carrinho));
 
+console.log("==============Detalhes do pedido com desconto==============")
 // teste de cupom 
 const total = calcularTotal(carrinho);
 console.log("Total sem desconto:", total);
-
 // aplicar um cupom de exemplo
 const totalComDesconto = aplicarCupom(total, "BLACK20");
-
 // mostrar total com desconto 
 console.log("Total com desconto:", totalComDesconto);
